@@ -1,0 +1,43 @@
+{
+  "extends": ["config:base"],
+  "baseBranch": "develop",
+  "automerge": false,
+  "commitMessage": "{{semanticPrefix}}Update {{depName}} to {{newVersion}} 🌟",
+  "prTitle": "{{semanticPrefix}}{{#if isPin}}Pin{{else}}Update{{/if}} dependency {{depName}} to version {{#if isRange}}{{newVersion}}{{else}}{{#if isMajor}}{{newVersionMajor}}.x{{else}}{{newVersion}}{{/if}}{{/if}} 🌟",
+  "major": {
+    "automerge": false
+  },
+  "minor": {
+    "automerge": false
+  },
+  "prHourlyLimit": 1,
+  "updateNotScheduled": false,
+  "timezone": "America/New_York",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "masterIssue": true,
+  "schedule": ["every weekend"],
+  "packageRules": [
+    {
+      "packageNames": ["cypress"],
+      "schedule": ["every weekday"]
+    },
+    {
+      "packageNames": ["@babel/compat-data"],
+      "allowedVersions": "7.9.0"
+    },
+    {
+      "packageNames": ["babel-loader"],
+      "allowedVersions": "8.0.6"
+    },
+    {
+      "packageNames": ["@types/express"],
+      "allowedVersions": "4.17.2"
+    },
+    {
+      "packageNames": ["@types/express-serve-static-core"],
+      "allowedVersions": "4.17.2"
+    }
+  ]
+}
