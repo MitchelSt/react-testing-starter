@@ -50,6 +50,7 @@
     "@cypress/code-coverage": "3.9.10",
     "@cypress/instrument-cra": "1.4.0",
     "@percy/cypress": "2.3.4",
+    "@testing-library/cypress": "^8.0.2",
     "@testing-library/user-event": "^13.2.1",
     "@types/bcryptjs": "2.4.2",
     "@types/bluebird": "3.5.36",
@@ -88,6 +89,7 @@
     "concurrently": "6.2.0",
     "cors": "2.8.5",
     "cross-env": "7.0.3",
+    "cypress": "^9.3.1",
     "dotenv": "10.0.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-cypress": "2.11.3",
@@ -121,7 +123,8 @@
   "resolutions": {
     "@babel/compat-data": "7.9.0",
     "@types/express": "4.17.2",
-    "@types/express-serve-static-core": "4.17.2"
+    "@types/express-serve-static-core": "4.17.2",
+    "react-error-overlay": "6.0.9"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development concurrently yarn:start:react yarn:start:api:watch",
