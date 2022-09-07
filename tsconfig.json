@@ -17,5 +17,6 @@
     "jsx": "react-jsx",
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "scripts", "backend", "src/__tests__"]
+  "include": ["src", "scripts", "backend", "src/__tests__"],
+  "exclude": ["cypress"]
 }
